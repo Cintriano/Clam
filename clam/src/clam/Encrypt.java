@@ -27,30 +27,36 @@ public class Encrypt {
 	
 	public static void main(String[] args) throws IOException {
 		
-		System.out.println(password_reader());
+		List<String> password_list = new ArrayList<>();
 		
-		String msg2 [];
-		String msg = "Mano se vc precisar de ajuda bora hj a noite na facul e eu te ajudo com o trabalho, nos programamos";
-		//"OI MEU BEM"
-		//24744:14046:24495:24078:23676:20415:24495:17040:23676:24078:
+		password_list = password_reader();
+		Integer aux = 0;
 		String msg_encrypt = "";
 		
-		for (Integer i = 0; i < msg.length(); i++) {
-			String code = Coding.coding(msg.substring(i, i + 1));
-			//if (msg.substring(i, i + 1).equals(" ")) {
-				//msg_encrypt = msg_encrypt + "\n";
-			//}
-			msg_encrypt = msg_encrypt + Math.mathing(code) + ":";
+		for (String password : password_list) {
+			//System.out.println(password_list.get(i));
+			for (int i = 0; i < password.length(); i++) {
+				String code = Coding.coding(password.substring(i, i + 1));
+				if (aux == 15) {
+					msg_encrypt = msg_encrypt + "\n";
+					aux = 0;
+				}
+				aux++;
+				msg_encrypt = msg_encrypt + Math.mathing(code) + "	";
 			}
-		msg_encrypt = msg_encrypt.substring(0, msg_encrypt.length() - 1);
+		}
 		System.out.println(msg_encrypt);
-		
-		//msg2 = msg.split(":");
-		//for (Integer i = 0; i < msg.length(); i++) {
-			//msg_encrypt = msg_encrypt + anmath(msg);
-			//String code = coding(msg.substring(i, i + 1));
-			//msg_encrypt = msg_encrypt + mathing(code) + ":";
-			//}
-		//System.out.print(msg_encrypt);
 	}
 }
+		
+		/* 
+		System.out.println(password_reader());
+		String msg2 [];
+		
+		msg2 = msg.split(":");
+		for (Integer i = 0; i < msg.length(); i++) {
+			msg_encrypt = msg_encrypt + anmath(msg);
+			String code = coding(msg.substring(i, i + 1));
+			msg_encrypt = msg_encrypt + mathing(code) + ":";
+			}
+		*/
