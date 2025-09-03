@@ -4,3 +4,5 @@ msg.txt
 msg_decrypt.txt
 msg_encrypt.txt
 .env
+/shelf/
+/workspace.xml
