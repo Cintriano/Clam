@@ -1,4 +1,5 @@
 /bin/
+.idea
 msg.txt
 msg_decrypt.txt
 msg_encrypt.txt
