@@ -1,7 +1,7 @@
 from Math import *
-from Coding import *
-from LineEncrypt import *
-from LineDecrypy import *
+from Python.src.Coding import *
+from Python.src.LineEncrypt import *
+from Python.src.LineDecrypy import *
 
 def lineEncrypt() -> str:
     msg_encrypt: str = ""

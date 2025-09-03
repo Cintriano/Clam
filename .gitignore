@@ -1,0 +1,5 @@
+/bin/
+msg.txt
+msg_decrypt.txt
+msg_encrypt.txt
+.env

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Clam</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/clam/Coding.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/src/Coding.java</locationURI>
+		</link>
+		<link>
+			<name>src/clam/Decrypt.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/src/Decrypt.java</locationURI>
+		</link>
+		<link>
+			<name>src/clam/Encrypt.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/src/Encrypt.java</locationURI>
+		</link>
+		<link>
+			<name>src/clam/Math.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/src/Math.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
